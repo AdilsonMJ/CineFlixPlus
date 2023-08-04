@@ -1,7 +1,7 @@
 package com.adilsonjager.project.list.apiList.controller;
 
-import com.adilsonjager.project.list.apiList.Services.MovieServices;
-import com.adilsonjager.project.list.apiList.entities.MovieModel;
+import com.adilsonjager.project.list.apiList.Services.moviesServices.MovieServices;
+import com.adilsonjager.project.list.apiList.entities.model.MovieModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

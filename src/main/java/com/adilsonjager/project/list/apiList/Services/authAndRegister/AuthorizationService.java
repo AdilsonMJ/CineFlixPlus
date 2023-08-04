@@ -1,6 +1,6 @@
-package com.adilsonjager.project.list.apiList.Services;
+package com.adilsonjager.project.list.apiList.Services.authAndRegister;
 
-import com.adilsonjager.project.list.apiList.repository.RepositoryUserDB;
+import com.adilsonjager.project.list.apiList.repository.localDB.RepositoryUserDB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

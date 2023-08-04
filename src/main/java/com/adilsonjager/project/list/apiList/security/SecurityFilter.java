@@ -1,6 +1,6 @@
 package com.adilsonjager.project.list.apiList.security;
 
-import com.adilsonjager.project.list.apiList.repository.RepositoryUserDB;
+import com.adilsonjager.project.list.apiList.repository.localDB.RepositoryUserDB;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

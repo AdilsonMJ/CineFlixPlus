@@ -1,7 +1,7 @@
 package com.adilsonjager.project.list.apiList;
 
-import com.adilsonjager.project.list.apiList.entities.MovieModel;
-import com.adilsonjager.project.list.apiList.repository.RepositoryMovieDB;
+import com.adilsonjager.project.list.apiList.entities.model.MovieModel;
+import com.adilsonjager.project.list.apiList.repository.localDB.RepositoryMovieDB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

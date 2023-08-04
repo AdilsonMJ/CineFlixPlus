@@ -1,4 +1,4 @@
-package com.adilsonjager.project.list.apiList.entities;
+package com.adilsonjager.project.list.apiList.entities.model;
 
 import java.io.Serializable;
 

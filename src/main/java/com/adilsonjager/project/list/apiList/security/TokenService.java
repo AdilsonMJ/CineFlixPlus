@@ -1,6 +1,6 @@
 package com.adilsonjager.project.list.apiList.security;
 
-import com.adilsonjager.project.list.apiList.entities.UserModel;
+import com.adilsonjager.project.list.apiList.entities.model.UserModel;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;

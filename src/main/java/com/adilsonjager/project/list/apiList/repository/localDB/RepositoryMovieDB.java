@@ -1,6 +1,6 @@
-package com.adilsonjager.project.list.apiList.repository;
+package com.adilsonjager.project.list.apiList.repository.localDB;
 
-import com.adilsonjager.project.list.apiList.entities.MovieModel;
+import com.adilsonjager.project.list.apiList.entities.model.MovieModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

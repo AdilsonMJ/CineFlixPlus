@@ -1,9 +1,9 @@
-package com.adilsonjager.project.list.apiList.Services;
+package com.adilsonjager.project.list.apiList.Services.authAndRegister;
 
 import com.adilsonjager.project.list.apiList.entities.DTO.RegisterDTO;
-import com.adilsonjager.project.list.apiList.entities.UserModel;
-import com.adilsonjager.project.list.apiList.entities.UserRoles;
-import com.adilsonjager.project.list.apiList.repository.RepositoryUserDB;
+import com.adilsonjager.project.list.apiList.entities.model.UserModel;
+import com.adilsonjager.project.list.apiList.entities.model.UserRoles;
+import com.adilsonjager.project.list.apiList.repository.localDB.RepositoryUserDB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

@@ -1,8 +1,8 @@
-package com.adilsonjager.project.list.apiList.Services;
+package com.adilsonjager.project.list.apiList.Services.moviesServices;
 
 import com.adilsonjager.project.list.apiList.Services.exceptions.ResourceNotFoundException;
-import com.adilsonjager.project.list.apiList.entities.MovieModel;
-import com.adilsonjager.project.list.apiList.repository.RepositoryMovieDB;
+import com.adilsonjager.project.list.apiList.entities.model.MovieModel;
+import com.adilsonjager.project.list.apiList.repository.localDB.RepositoryMovieDB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

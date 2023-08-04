@@ -1,7 +1,8 @@
 package com.adilsonjager.project.list.apiList.Services;
 
 import com.adilsonjager.project.list.apiList.Services.exceptions.ResourceNotFoundException;
-import com.adilsonjager.project.list.apiList.entities.MovieModel;
+import com.adilsonjager.project.list.apiList.Services.moviesServices.MovieServices;
+import com.adilsonjager.project.list.apiList.entities.model.MovieModel;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
