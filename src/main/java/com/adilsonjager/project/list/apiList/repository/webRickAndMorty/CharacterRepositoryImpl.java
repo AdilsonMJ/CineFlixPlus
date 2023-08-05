@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.Optional;
+
 @Repository
 public class CharacterRepositoryImpl implements CharacterRepository{
 
@@ -16,17 +18,17 @@ public class CharacterRepositoryImpl implements CharacterRepository{
     RickAndMortyClient rickAndMortyClient;
 
     @Override
-    public Mono<CharacterResponse> findCharacterById(Long id) {
-        return rickAndMortyClient.findAndCharacterById(id);
+    public Optional<CharacterResponse> findCharacterById(Long id) {
+        return Optional.ofNullable(rickAndMortyClient.findAndCharacterById(id));
     }
 
     @Override
-    public Mono<LocationResponse> findLocationById(Long id) {
-        return rickAndMortyClient.findLocationById(id);
+    public Optional<LocationResponse> findLocationById(Long id) {
+        return Optional.ofNullable(rickAndMortyClient.findLocationById(id));
     }
 
     @Override
-    public Flux<ListOfCharacters> getAllCharacter() {
-        return rickAndMortyClient.getAll();
+    public Optional<ListOfCharacters> getAllCharacter() {
+        return Optional.ofNullable(rickAndMortyClient.getAll());
     }
 }

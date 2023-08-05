@@ -8,12 +8,14 @@ import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.Optional;
+
 @Repository
 public interface CharacterRepository {
-    Mono<CharacterResponse> findCharacterById(Long id);
+    Optional<CharacterResponse> findCharacterById(Long id);
 
-    Mono<LocationResponse> findLocationById(Long id);
+    Optional<LocationResponse> findLocationById(Long id);
 
-    Flux<ListOfCharacters> getAllCharacter();
+    Optional<ListOfCharacters> getAllCharacter();
 
 }

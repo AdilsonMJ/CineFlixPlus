@@ -11,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import reactor.core.publisher.Flux;
 
 @Controller
 @RequestMapping("/rickAndMorty")
@@ -32,7 +31,7 @@ public class RickAndMortyController {
     }
 
     @GetMapping("/characters")
-    public ResponseEntity<Flux<ListOfCharacters>> getAll(){
+    public ResponseEntity<ListOfCharacters> getAll(){
         return ResponseEntity.status(HttpStatus.OK).body(rickAndMortyService.getAllCharacters());
     }
 
