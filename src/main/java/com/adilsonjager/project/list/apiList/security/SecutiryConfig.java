@@ -30,6 +30,7 @@ public class SecutiryConfig {
     SecurityFilter securityFilter;
 
 
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
 
@@ -40,8 +41,6 @@ public class SecutiryConfig {
                         .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
                         .requestMatchers(HttpMethod.GET, "/movies/moviesbyyear").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/movies/**").hasRole("USER")
-                        .requestMatchers(HttpMethod.GET, "/rickAndMorty/characters").hasRole("USER")
                         .anyRequest().authenticated())
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();

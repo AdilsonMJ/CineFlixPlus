@@ -45,7 +45,7 @@ public class MovieServices {
     public List<MovieModel> getAllMovieSortByGender() {
         List<MovieModel> movieList = new ArrayList<>(repositoryMovieDB.findAll());
         movieList.sort(Comparator.comparing(MovieModel::getGender));
-        return movieList;
+         return movieList;
     }
 
 
